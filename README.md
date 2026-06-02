@@ -80,6 +80,9 @@ AfterEffects-FFX-Builder/
 │   ├── ffx_builder_icon.svg
 │   ├── icon.ico
 │   └── svg_to_ico.py
+├── .github/
+│   └── workflows/
+│       └── build.yml
 └── requirements.txt      # Python
 ```
  
