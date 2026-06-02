@@ -1,9 +1,22 @@
+====================
+BUILD WINDOWS EXAMPLE
+====================
+
 WITHOUT SPEC:
 pyinstaller --noconfirm --clean --windowed --onefile --name "FFX Builder" --icon=icon.ico "main.py"
 
 WITH SPEC:
 pyinstaller --noconfirm --clean "FFX Builder.spec"
 
+
+====================
+GIT EXAMPLES
+====================
+
 GIT ADD A NEW VERSION:
 git tag v1.0.0
 git push origin v1.0.0
+
+GIT DELETE A TAG:
+git tag -d v1.0.0
+git push origin --delete v1.0.0
