@@ -68,9 +68,10 @@ Output is in the `dist/` folder.
 ## File structure
  
 ```
-GM After Effects FFX Builder/
+AfterEffects-FFX-Builder/
 ├── main.py               # Main application
 ├── ae_ffx.py             # FFX binary generator
+├── build.txt             # Simple build instructions
 ├── FFX Builder.spec      # PyInstaller spec
 ├── icon.ico              # App icon
 ├── Assets/
@@ -79,7 +80,7 @@ GM After Effects FFX Builder/
 │   ├── ffx_builder_icon.svg
 │   ├── icon.ico
 │   └── svg_to_ico.py
-└── requirements.txt
+└── requirements.txt      # Python
 ```
  
 ---
