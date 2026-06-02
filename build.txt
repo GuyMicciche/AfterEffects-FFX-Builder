@@ -1,0 +1,5 @@
+WITHOUT SPEC:
+pyinstaller --noconfirm --clean --windowed --onefile --name "FFX Builder" --icon=icon.ico "main.py"
+
+WITH SPEC:
+pyinstaller --noconfirm --clean "FFX Builder.spec"
