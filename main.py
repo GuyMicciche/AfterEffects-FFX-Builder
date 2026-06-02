@@ -1,5 +1,5 @@
 """
-GM After Effects FFX Builder
+After Effects FFX Builder
 A PyQt6 GUI for building After Effects pseudo effect FFX preset files.
 Requires ae_ffx.py in the same directory.
 """
@@ -767,6 +767,8 @@ class FFXBuilder(QMainWindow):
         item.setForeground(0, QColor(color))
         if ctrl_type == "Group":
             item.setFlags(item.flags() | Qt.ItemFlag.ItemIsDropEnabled)
+        else:
+            item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsDropEnabled)
         return item
     
     def _item_depth(self, item):
@@ -832,11 +834,7 @@ class FFXBuilder(QMainWindow):
             s_data = s.data(0, Qt.ItemDataRole.UserRole) or {}
             s_is_group = s_data.get("type") == "Group"
 
-            if s_is_group and ctrl_type == "Group":
-                # Adding a group while a group is selected → sibling after it
-                p = s.parent() or self._tree.invisibleRootItem()
-                p.insertChild(p.indexOfChild(s) + 1, item)
-            elif s_is_group:
+            if s_is_group:
                 # Adding a non-group control while a group is selected → append inside
                 s.addChild(item)
                 s.setExpanded(True)
