@@ -89,5 +89,7 @@ AfterEffects-FFX-Builder/
 ---
  
 ## License
- 
-MIT
+
+© 2026 Guy Micciche — MICCICHE Studios
+This project is licensed under [GNU GPL v3.0](LICENSE).
+Free to use, modify, and distribute with attribution. Any derivative works must remain open source under the same license.
