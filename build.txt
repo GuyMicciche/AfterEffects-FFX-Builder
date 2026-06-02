@@ -3,3 +3,7 @@ pyinstaller --noconfirm --clean --windowed --onefile --name "FFX Builder" --icon
 
 WITH SPEC:
 pyinstaller --noconfirm --clean "FFX Builder.spec"
+
+GIT ADD A NEW VERSION:
+git tag v1.0.0
+git push origin v1.0.0
