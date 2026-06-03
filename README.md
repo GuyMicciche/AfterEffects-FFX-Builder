@@ -1,4 +1,7 @@
 # After Effects FFX Builder
+
+![GitHub Release](https://img.shields.io/github/v/release/GuyMicciche/AfterEffects-FFX-Builder?style=for-the-badge)
+
 A PyQt6 desktop GUI for building Adobe After Effects pseudo effect preset files (.ffx). Define sliders, colors, checkboxes, layers, and other effect controls visually, then export a ready-to-use FFX binary without writing any code.
 
 <img width="1878" height="1110" alt="image" src="https://github.com/user-attachments/assets/8d36a41d-deb7-41f4-a45d-778452cbdadc" />
